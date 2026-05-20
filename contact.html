@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jiangsu Xiagang Electric Power</title>
+    <meta name="description" content="Get in touch with Jiangsu Xiagang Electric Power for power engineering solutions, EPC projects, and equipment inquiries.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header class="site-header">
+        <div class="logo">
+            <h1>XIAGANG POWER</h1>
+            <p>ENERGY TECHNOLOGY</p>
+        </div>
+        <div class="menu-toggle">☰</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main style="padding: 2.5rem;">
+        <div class="section-header">
+            <div class="section-subhead">Get In Touch</div>
+            <h1 style="font-size: 2.5rem;">Let's Discuss Your Power Needs</h1>
+            <p>Whether you have a project in mind or need technical consultation, we're ready to help.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- 左侧：联系信息 + 社交链接 -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-detail">
+                    <strong>Zhang Qichun</strong>
+                    <span>Sales & Project Director</span>
+                </div>
+                <div class="contact-detail">
+                    <strong>Email</strong>
+                    <a href="mailto:zhangjincheng8888@foxmail.com" style="color: var(--accent-cyan);">zhangjincheng8888@foxmail.com</a>
+                </div>
+                <div class="contact-detail">
+                    <strong>Phone</strong>
+                    <span>+86 (510) 1234 5678</span>
+                </div>
+                <div class="contact-detail">
+                    <strong>Office</strong>
+                    <span>Wuxi, Jiangsu Province, China</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/your-page" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <!-- 你可以自行补充 LinkedIn, Twitter 等 -->
+                    <a href="#" target="_blank">LinkedIn (Coming)</a>
+                </div>
+            </div>
+
+            <!-- 右侧：联系表单 -->
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form action="mailto:zhangjincheng8888@foxmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Please describe your project or inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <p class="form-note">* This will open your default email client. For a more advanced contact form, we can integrate a backend later.</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- 可选：添加简单的地图占位 -->
+        <div style="margin-top: 3rem; background: var(--bg-light); border-radius: 20px; padding: 1.5rem; text-align: center;">
+            <h3 style="margin-bottom: 1rem;">Visit Us</h3>
+            <p>No. 123, Huishan Avenue, Wuxi City, Jiangsu Province, China</p>
+            <div style="background: #D9E2EC; height: 200px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-top: 1rem;">
+                <span style="color: var(--text-light);">📍 Map Integration (Google Maps / Baidu Maps can be added)</span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Xiagang Power</h4>
+                <p>Energy Technology · Leads the Future</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Jiangsu Xiagang Electric Power Co., Ltd. All rights reserved.
+        </div>
+    </footer>
+</div>
+
+<!-- 移动端菜单脚本 -->
+<script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        });
+    }
+</script>
+</body>
+</html>
