@@ -21,7 +21,7 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="projects.html">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="contact.html">Contact</a>   <!-- 已改为独立页面 -->
         </nav>
     </header>
 
@@ -37,7 +37,7 @@
                 <div class="stat-item"><span class="stat-number">86</span><br>Experts</div>
             </div>
             <div style="margin-top: 2rem;">
-                <a href="#contact" class="btn btn-primary">Inquire Now</a>
+                <a href="contact.html" class="btn btn-primary">Inquire Now</a>
                 <a href="projects.html" class="btn btn-outline" style="margin-left: 1rem;">All Projects →</a>
             </div>
         </div>
@@ -143,7 +143,8 @@
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- 首页的联系区块（保留，但不再是导航目标） -->
+    <section id="contact-home" class="section">
         <div class="section-header">
             <div class="section-subhead">Get In Touch</div>
             <h2>Let's Power the Future Together</h2>
@@ -151,7 +152,7 @@
         <div class="cta-section">
             <h3 style="color: white; margin-bottom: 1rem;">Global Partnership Opportunities</h3>
             <p style="margin-bottom: 1.5rem;">We welcome international inquiries for EPC collaboration, equipment supply, and clean energy projects.</p>
-            <a href="mailto:info@xiagangpower.com" class="btn btn-primary">info@xiagangpower.com</a>
+            <a href="mailto:zhangjincheng8888@foxmail.com" class="btn btn-primary">zhangjincheng8888@foxmail.com</a>
             <p style="margin-top: 1rem;">+86 (510) 1234 5678 | Wuxi, Jiangsu, China</p>
         </div>
     </section>
@@ -168,6 +169,7 @@
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-col">
                 <h4>Legal</h4>
@@ -191,9 +193,13 @@
     }
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const targetId = this.getAttribute('href');
+            if (targetId === "#") return;
+            if (targetId.startsWith("#")) {
+                e.preventDefault();
+                const target = document.querySelector(targetId);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     });
     const sections = document.querySelectorAll('.section');
