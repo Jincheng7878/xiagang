@@ -21,8 +21,8 @@
         <div class="menu-toggle">☰</div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#services">Services</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html" class="active">Contact</a>
         </nav>
@@ -32,7 +32,7 @@
         <div class="section-header">
             <div class="section-subhead">Get In Touch</div>
             <h1 style="font-size: 2.5rem;">Let's Discuss Your Power Needs</h1>
-            <p>Whether you have a project in mind or need technical consultation, we're ready to help.</p>
+            <p id="contact-intro">Whether you have a project in mind or need technical consultation, we're ready to help.</p>
         </div>
 
         <div class="contact-grid">
@@ -61,7 +61,7 @@
             </div>
 
             <div class="contact-form">
-                <h3>Send a Message</h3>
+                <h3 id="form-title">Send a Message</h3>
                 <form action="mailto:zhangjincheng8888@foxmail.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Full Name</label>
@@ -99,8 +99,8 @@
             <div class="footer-col">
                 <h4>Explore</h4>
                 <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#services">Services</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -117,12 +117,62 @@
 </div>
 
 <script>
+    // Mobile menu toggle
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-links');
     if (toggle) {
         toggle.addEventListener('click', () => {
             nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
         });
+    }
+
+    // URL parameter handling for service-specific prefill
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    const service = getQueryParam('service');
+    const introEl = document.getElementById('contact-intro');
+    const formTitle = document.getElementById('form-title');
+    const messageField = document.getElementById('message');
+    let presetMessage = '';
+    let introText = '';
+    let titleText = 'Send a Message';
+
+    if (service) {
+        switch (service.toLowerCase()) {
+            case 'epc':
+                titleText = 'EPC Project Inquiry';
+                introText = 'Please provide details about your EPC project: voltage level (10kV–220kV), location, expected timeline, and any specific requirements.';
+                presetMessage = 'I am interested in your EPC power project services. Please share more details about your company and past projects.\n\n';
+                break;
+            case 'equipment':
+                titleText = 'Equipment Quote Request';
+                introText = 'Please specify the equipment type (switchgear, transformer, cable, etc.), voltage level, quantity, and any technical specifications.';
+                presetMessage = 'I would like to inquire about your power equipment supply. Please contact me with product catalogs and pricing information.\n\n';
+                break;
+            case 'renewable':
+                titleText = 'Renewable Energy Project Discussion';
+                introText = 'Tell us about your renewable energy project (solar, wind, storage), capacity, location, and grid connection requirements.';
+                presetMessage = 'We have a renewable energy project. Could you provide your solutions and case studies in this field?\n\n';
+                break;
+            case 'om':
+                titleText = 'O&M Support Request';
+                introText = 'Please describe your assets (substation, line, etc.), current issues, and expected level of support (one-time maintenance, long-term contract, emergency).';
+                presetMessage = 'I need O&M support for our power assets. Please get in touch to discuss your service packages and response times.\n\n';
+                break;
+            default:
+                break;
+        }
+        if (titleText !== 'Send a Message') {
+            formTitle.textContent = titleText;
+            introEl.textContent = introText;
+            if (messageField && presetMessage) {
+                // Prefill message field with helpful prompt
+                messageField.value = presetMessage;
+            }
+        }
     }
 </script>
 </body>
