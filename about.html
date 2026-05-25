@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Jiangsu Xiagang Electric Power – Power Engineering Excellence Since 2018</title>
-    <meta name="description" content="Learn about Xiagang Electric Power: founded in 2018 in Wuxi, China. We provide EPC services for 10kV-220kV substations, transmission lines, and distribution. ISO certified, 150+ projects.">
-    <meta name="keywords" content="Xiagang Electric Power, power engineering company, EPC contractor, China power solutions, substation builder">
+    <title>About Us | Jiangsu Xiagang Electric Power – Grade II Contractor</title>
+    <meta name="description" content="Xiagang Electric Power: Grade II in Construction, Power & Communication. ISO certified, 150+ projects, 15+ patents, AAA credit. Serving State Grid, China Mobile, industrial parks since 2018.">
     <link rel="canonical" href="https://xiagang.vercel.app/about.html">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -49,15 +48,14 @@
         }
         .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1rem;
             margin: 2rem 0;
         }
         .cert-item {
             background: var(--bg-light);
-            padding: 1rem;
+            padding: 0.75rem;
             border-radius: 12px;
-            text-align: center;
             font-size: 0.9rem;
             border: 1px solid var(--border-light);
         }
@@ -77,6 +75,43 @@
         .value-icon {
             font-size: 2rem;
             margin-bottom: 0.5rem;
+        }
+        .patent-list {
+            columns: 2;
+            column-gap: 2rem;
+            margin: 1rem 0;
+        }
+        .patent-list li {
+            margin-bottom: 0.5rem;
+            break-inside: avoid;
+        }
+        .credit-badge {
+            background: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 0.2rem;
+            font-size: 0.8rem;
+            box-shadow: var(--shadow-sm);
+        }
+        .team-numbers {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+        }
+        .number-card {
+            flex: 1;
+            background: var(--bg-light);
+            padding: 0.8rem;
+            text-align: center;
+            border-radius: 12px;
+        }
+        @media (max-width: 768px) {
+            .patent-list {
+                columns: 1;
+            }
         }
     </style>
 </head>
@@ -125,12 +160,12 @@
             </div>
             <div class="about-grid" style="grid-template-columns: 1fr;">
                 <div class="about-text">
-                    <p>Founded on August 21, 2018, with a registered capital of <strong>35.88 million RMB</strong>, Xiagang Electric Power is located in Wuxi, Jiangsu Province. We own a <strong>3,350 m² modern office building</strong> and a <strong>3,913 m² fixed warehouse</strong>. Our annual revenue exceeds hundreds of millions RMB.</p>
+                    <p>Founded on August 21, 2018, with a registered capital of <strong>35.88 million RMB</strong>, Xiagang Electric Power is located in Wuxi, Jiangsu Province. We own a <strong>3,350 m² modern office building</strong> and a <strong>3,913 m² fixed warehouse</strong>, plus a production base of 4,000+ m² in Yixing. Our annual revenue exceeds hundreds of millions RMB.</p>
                     <p>We specialize in <strong>power distribution, transmission, and substation EPC</strong>, covering 10kV distribution and 35kV, 110kV, 220kV transmission & transformation projects – from design and equipment supply to construction and commissioning. We serve major communication operators, equipment manufacturers, State Grid, government agencies, and industrial enterprises.</p>
                     <div class="stats-grid" style="margin-top: 2rem;">
                         <div class="stat-card"><div class="number">2018</div>Founded</div>
                         <div class="stat-card"><div class="number">35.88M</div>Capital (RMB)</div>
-                        <div class="stat-card"><div class="number">7,263</div>m² Facilities</div>
+                        <div class="stat-card"><div class="number">7,263+</div>m² Facilities</div>
                         <div class="stat-card"><div class="number">150+</div>Projects</div>
                     </div>
                 </div>
@@ -218,7 +253,7 @@
             </div>
         </section>
 
-        <!-- Qualifications & Certifications -->
+        <!-- Qualifications & Certifications (Updated with new grades) -->
         <section class="section">
             <div class="section-header">
                 <div class="section-subhead">Certified Excellence</div>
@@ -226,15 +261,68 @@
             </div>
             <div class="cert-grid">
                 <div class="cert-item">✔ Grade II General Contracting for Construction Engineering</div>
-                <div class="cert-item">✔ Grade III General Contracting for Power Engineering</div>
-                <div class="cert-item">✔ Grade III General Contracting for Communication Engineering</div>
-                <div class="cert-item">✔ National Energy Administration License (Installation/Repair/Testing)</div>
-                <div class="cert-item">✔ Civil Unmanned Aerial Vehicle Operation License</div>
-                <div class="cert-item">✔ Safety Production License</div>
-                <div class="cert-item">✔ ISO 9001 / 14001 / 45001 Management Systems</div>
-                <div class="cert-item">✔ AAA Credit & Service Integrity Certificate</div>
-                <div class="cert-item">✔ 18+ Patents (2 trademarks)</div>
+                <div class="cert-item">✔ Grade II General Contracting for Power Engineering</div>
+                <div class="cert-item">✔ Grade II General Contracting for Communication Engineering</div>
+                <div class="cert-item">✔ Construction Labor Qualification</div>
+                <div class="cert-item">✔ Power Facility License – Installation Class III / Repair Class II / Testing Class II</div>
+                <div class="cert-item">✔ Construction Enterprise Safety Production License</div>
+                <div class="cert-item">✔ General Aviation Operation Permit & Civil UAV Operation Certificate (UMC-0-HQ-20240329001)</div>
+                <div class="cert-item">✔ ISO 9001:2015 / ISO 14001:2015 / ISO 45001:2018 Management Systems</div>
+                <div class="cert-item">✔ Technology-based SME · Jiangsu Private Enterprise</div>
+                <div class="cert-item">✔ Wuxi Construction Enterprise Credit Management Manual</div>
             </div>
+            <!-- AAA Credit Certificates Compact -->
+            <div style="margin-top: 1.5rem;">
+                <h3>AAA Credit Ratings (11+ categories)</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
+                    <span class="credit-badge">AAA Credit Enterprise</span>
+                    <span class="credit-badge">AAA Credit Rating</span>
+                    <span class="credit-badge">AAA Integrity Unit</span>
+                    <span class="credit-badge">AAA Honest Supplier</span>
+                    <span class="credit-badge">AAA Industry Integrity Unit (Power)</span>
+                    <span class="credit-badge">AAA Integrity Demonstration Unit</span>
+                    <span class="credit-badge">AAA Quality & Service Integrity</span>
+                    <span class="credit-badge">AAA No Complaint Unit</span>
+                    <span class="credit-badge">AAA Trustworthy Service</span>
+                    <span class="credit-badge">AAA Contract-abiding Enterprise</span>
+                    <span class="credit-badge">Honest Entrepreneur – Zhang Qichun</span>
+                    <span class="credit-badge">Honest Professional Manager – Zhang Qichun</span>
+                </div>
+            </div>
+            <!-- Patents List (expanded, English names) -->
+            <div style="margin-top: 2rem;">
+                <h3>Utility Model Patents (9 granted)</h3>
+                <ul class="patent-list">
+                    <li>AC Remote Control Power Supply</li>
+                    <li>Anti-shock Maintenance Platform</li>
+                    <li>Panoramic Monitoring Device</li>
+                    <li>Circuit Continuity Detection Structure</li>
+                    <li>Day-Night Integrated Monitoring for Transmission Lines</li>
+                    <li>Climbing Structure for Power Maintenance</li>
+                    <li>Quick Connector for Power Lines</li>
+                    <li>Anti-power-on Maintenance Device</li>
+                    <li>Fast Cable Stripping Tool</li>
+                </ul>
+                <p>Plus 2 registered trademarks (Class 9 & 35).</p>
+            </div>
+        </section>
+
+        <!-- Team Data -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-subhead">Our People</div>
+                <h2>Professional Team</h2>
+            </div>
+            <div class="team-numbers">
+                <div class="number-card"><strong>15</strong><br>Project Managers (Class I/II)</div>
+                <div class="number-card"><strong>25</strong><br>Engineers (Senior/Medium/Assistant)</div>
+                <div class="number-card"><strong>15</strong><br>Safety Officers (A/B/C)</div>
+                <div class="number-card"><strong>3</strong><br>UAV Pilots</div>
+                <div class="number-card"><strong>60+</strong><br>Specialized Technicians</div>
+                <div class="number-card"><strong>20</strong><br>Service Team</div>
+            </div>
+            <p><strong>Total workforce:</strong> 165+ employees, covering all aspects of power engineering, construction, and after-sales support.</p>
+            <p><strong>Service Coverage:</strong> Jiangsu Province (Wuxi, Jiangyin, Yixing, Changzhou, Suzhou) and Hebei Province (Handan, Wu'an) with rapid emergency response.</p>
         </section>
 
         <!-- Staff Training & Team Building -->
@@ -335,6 +423,7 @@
                 <h4>Explore</h4>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
+                <a href="services.html">Services</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </div>

@@ -44,15 +44,15 @@
                 </div>
                 <div class="contact-detail">
                     <strong>Email</strong>
-                    <a href="mailto:zhangjincheng8888@foxmail.com" style="color: var(--accent-cyan);">zhangjincheng8888@foxmail.com</a>
+                    <a href="mailto:jsxg4444@163.com" style="color: var(--accent-cyan);">jsxg4444@163.com</a>
                 </div>
                 <div class="contact-detail">
                     <strong>Phone</strong>
-                    <span>+86 (510) 1234 5678</span>
+                    <span>+86 (510) 8355 8168</span>
                 </div>
                 <div class="contact-detail">
                     <strong>Office</strong>
-                    <span>Wuxi, Jiangsu Province, China</span>
+                    <span>588-S111, Youdu Li, Liangxi District, Wuxi, Jiangsu, China</span>
                 </div>
                 <div class="social-links">
                     <a href="https://www.facebook.com/profile.php?id=61590316914743" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
@@ -62,7 +62,7 @@
 
             <div class="contact-form">
                 <h3 id="form-title">Send a Message</h3>
-                <form action="mailto:zhangjincheng8888@foxmail.com" method="post" enctype="text/plain">
+                <form action="mailto:jsxg4444@163.com" method="post" enctype="text/plain">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required placeholder="Your name">
@@ -83,7 +83,7 @@
 
         <div style="margin-top: 3rem; background: var(--bg-light); border-radius: 20px; padding: 1.5rem; text-align: center;">
             <h3 style="margin-bottom: 1rem;">Visit Us</h3>
-            <p>No. 123, Huishan Avenue, Wuxi City, Jiangsu Province, China</p>
+            <p>588-S111, Youdu Li, Liangxi District, Wuxi City, Jiangsu Province, China</p>
             <div style="background: #D9E2EC; height: 200px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-top: 1rem;">
                 <span style="color: var(--text-light);">📍 Map Integration (Google Maps / Baidu Maps can be added)</span>
             </div>
@@ -117,7 +117,6 @@
 </div>
 
 <script>
-    // Mobile menu toggle
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav-links');
     if (toggle) {
@@ -126,7 +125,7 @@
         });
     }
 
-    // URL parameter handling for service-specific prefill
+    // URL parameter handling for service-specific prefill (保持不变)
     function getQueryParam(param) {
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(param);
@@ -169,7 +168,6 @@
             formTitle.textContent = titleText;
             introEl.textContent = introText;
             if (messageField && presetMessage) {
-                // Prefill message field with helpful prompt
                 messageField.value = presetMessage;
             }
         }
